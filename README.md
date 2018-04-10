@@ -1,4 +1,4 @@
-# Encrypt Decrypt
+# Encrypt Decrypt Data
 
 *By [Vicky Kumar](https://www.facebook.com/kumar.vicky7125)*
 
