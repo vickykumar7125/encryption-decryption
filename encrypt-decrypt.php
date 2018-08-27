@@ -8,14 +8,14 @@ class encrypt_decrypt{
 
     // public function to encrypt the string
     public function encrypt($string){
-        $output = openssl_encrypt($string, $this -> encrypt_method, encrypt_decrypt::HashSalt(), 0, encrypt_decrypt::Encryptedsecreate());
+        $output = openssl_encrypt($string, $this -> encrypt_method, self::HashSalt(), 0, self::Encryptedsecreate());
         $output = base64_encode($output);
         return $output;
     }
 
     // public function to decrypt the string
     public function decrypt($string){
-        $output = openssl_decrypt(base64_decode($string), $this -> encrypt_method, encrypt_decrypt::HashSalt(), 0, encrypt_decrypt::Encryptedsecreate());
+        $output = openssl_decrypt(base64_decode($string), $this -> encrypt_method, self::HashSalt(), 0, self::Encryptedsecreate());
         return $output;
     }
 
